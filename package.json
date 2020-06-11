@@ -4,9 +4,10 @@
   "private": true,
   "dependencies": {
     "firebase": "^4.6.2",
-    "react": "^16.1.0",
-    "react-dom": "^16.1.0",
-    "react-scripts": "1.0.17"
+    "react": "next",
+    "react-dom": "next",
+    "react-scripts": "1.0.17",
+    "sweetalert2": "^9.14.4"
   },
   "scripts": {
     "start": "react-scripts start",
