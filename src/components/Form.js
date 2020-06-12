@@ -25,15 +25,12 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    //guardando en firebase
     firebase
       .firestore()
       .collection("form")
       .add(data)
       .then(() => {
         Swal.fire("Good job!", "Se han agregado tus datos", "success");
-
-        //limpiando el formulario
         setData({
           name: "",
           email: "",

@@ -4,10 +4,7 @@ import CardInfo from "./components/CardInfo";
 import firebase from "./Firebase";
 
 function App() {
-  //state de los datos que vienen de firebase
   const [infos, setInfo] = useState([]);
-
-  //funcion para hacer llamado a firebase
   const fetchData = () => {
     firebase
       .firestore()
@@ -17,7 +14,6 @@ function App() {
           id: doc.id,
           ...doc.data(),
         }));
-        //se guarda la info en el state
         setInfo(newInfo);
       });
   };
